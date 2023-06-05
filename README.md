@@ -7,7 +7,7 @@ EvilPhish is a tool designed for phishing assessments to test the security aware
 ## Tool Contents
 
 - `EvilPhish.py`: The main Python script that serves the credential harvesting webpage.
-- `LICENSE.txt`: The license file for EvilPhish (MIT License).
+- `LICENSE`: The license file for EvilPhish (MIT License).
 - `README.md`: This file provides instructions and information about the tool.
 - `Requirements.txt`: A list of required Python packages.
 - `templates/`: A directory containing templates for the phishing campaign.
