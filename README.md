@@ -1,8 +1,8 @@
 # EvilPhish
 
-EvilPhish is a tool designed for phishing assessments to test the security awareness of individuals and organizations. It provides a framework for serving a phishing domain and harvesting user credentials.  The webpage is designed to persuade users to login using their network credentials, following a simulated copmuter patch verification scan.
+EvilPhish is a tool designed for phishing assessments to test the security awareness of individuals and organizations. It provides a framework for serving a phishing domain and harvesting user credentials.  The webpage is designed to persuade users to login using their network credentials, following a simulated patch verification scan.
 
-**Note: Before performing the assessment, you will need to buy a domain and generate DNS and A records pointing to the server running EvilPhish.**
+**Note: Before performing the assessment, you will need to purchase a phishing domain and generate DNS and A records pointing to the server running EvilPhish.**
 
 ## Tool Contents
 
