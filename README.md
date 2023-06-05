@@ -1,6 +1,6 @@
 # EvilPhish
 
-EvilPhish is a tool designed for phishing simulations and testing the security awareness of individuals or organizations. It provides a framework for serving a phishing domain and monitoring captured credentials. The webpage is designed to persuade users to login using their network credentials, following a successful copmuter patch verification scan.
+EvilPhish is a tool designed for phishing assessments to test the security awareness of individuals and organizations. It provides a framework for serving a phishing domain and harvesting user credentials.  The webpage is designed to persuade users to login using their network credentials, following a simulated copmuter patch verification scan.
 
 **Note: Before performing the assessment, you will need to buy a domain and generate DNS and A records pointing to the server running EvilPhish.**
 
@@ -47,13 +47,7 @@ EvilPhish is a tool designed for phishing simulations and testing the security a
 
 7. Customize the email domain and password policy in the `EvilPhish.py` script:
    - Open `EvilPhish.py` in a text editor.
-   - Find the following line of code:
-
-     ```
-    if email.endswith('@evilphishinc.com') and len(password) >= 8:
-
-     ```
-
+   - Find the following line of code: if email.endswith('@evilphishinc.com') and len(password) >= 8:
    - Modify the domain name to match your organization.
 
 ### Running EvilPhish
@@ -74,7 +68,6 @@ EvilPhish is a tool designed for phishing simulations and testing the security a
      ```bash
      tail -f credentials.txt
      ```
-
    - You will see the captured credentials in real-time as the targets interact with the phishing page.
 
 ## Disclaimer
