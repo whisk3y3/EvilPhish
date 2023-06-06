@@ -37,7 +37,6 @@ EvilPhish is a tool designed for phishing and vishing assessments to test the se
      sudo certbot certonly --standalone -d <domainname>
      ```
 
-   - This command generates a self-signed certificate and private key pair that is valid for 365 days.
    - Save the generated `private_key.key` and `ssl_certificate.crt` files in a secure location.
 
 ### Configuring EvilPhish
