@@ -2,7 +2,7 @@
 
 EvilPhish is a tool designed for phishing and vishing assessments to test the security awareness of individuals and organizations. It provides a framework for serving a phishing domain and harvesting user credentials.  The webpage is designed to persuade users to login using their network credentials, following a simulated patch verification scan.
 
-**Note: Before performing the assessment, you will need to purchase a phishing domain and generate DNS and A records pointing to the server running EvilPhish.**
+**Note: Before performing the assessment, you will need to purchase a phishing domain and generate the appropriate DNS records pointing to the server running EvilPhish.**
 
 ## Tool Contents
 
@@ -29,10 +29,12 @@ EvilPhish is a tool designed for phishing and vishing assessments to test the se
 
 5. Generate SSL/TLS certificate and private key files:
    - Open a terminal and navigate to the EvilPhish directory.
+   - Download certbot
    - Run the following command to generate the SSL/TLS certificate and private key files:
 
      ```bash
-     sudo openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout private_key.key -out ssl_certificate.crt -days 365
+     sudo apt install certbot
+     sudo certbot certonly --standalone -d <domainname>
      ```
 
    - This command generates a self-signed certificate and private key pair that is valid for 365 days.
